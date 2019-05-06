@@ -1,2 +1,1 @@
-hi
-this is new update
+https://www.calculator.net/finance-calculator.html?ctype=endamount&ctargetamountv=1000000&cyearsv=10&cstartingprinciplev=20000&cinterestratev=6&ccontributeamountv=1000&ciadditionat1=beginning&printit=0&x=87&y=15
