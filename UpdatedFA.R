@@ -1,4 +1,5 @@
 library(shiny)
+source("./function.R")
 
 ui <- fluidPage(
   titlePanel("Financial Calculator"),
@@ -42,7 +43,6 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  source("./function.R")
 
   output$selected_var <- renderText({ 
     paste("You have selected", input$var)
@@ -51,7 +51,7 @@ server <- function(input, output) {
     paste("Your yearly saving is RM: ", input$numInput)
   })
   output$FV <- renderText({
-  paste("Your future value for",input$range,"years is RM: ", as.numeric(future_val(input$numinput,input$AIR,input$range)))
+  paste("Your future value for",input$range,"years is RM: ", as.numeric(future_val(input$numInput,input$AIR,input$range)))
   })
   output$AIRout <- renderText({
     paste("Your annual rate of return is: ", input$AIR,"%")
